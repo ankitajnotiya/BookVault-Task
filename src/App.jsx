@@ -1,27 +1,25 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import BookInventoryPage from '../app/page';
-import BookDetailPage from '../app/book/[id]/page';
-import BookEditPage from '../app/book/[id]/edit';
-import FAQPage from '../app/faq';
-import TermsPage from '../app/terms';
-import PrivacyPage from '../app/privacy';
-import ProfilePage from '../app/profile/profile';
+import PeoplePage from '../app/page';
+import MyInfoPage from '../app/my-info';
+import TeamManagementPage from '../app/team-management';
+import ProjectSetupPage from '../app/project-setup';
+import HiringPage from '../app/hiring';
+import ReportPage from '../app/report';
+import SettingsPage from '../app/settings';
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-background flex flex-col">
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<BookInventoryPage />} />
-            <Route path="/books/:id" element={<BookDetailPage />} />
-            <Route path="/books/:id/edit" element={<BookEditPage />} />
-            <Route path="/faq" element={<FAQPage />} />
-            <Route path="/terms" element={<TermsPage />} />
-            <Route path="/privacy" element={<PrivacyPage />} />
-            <Route path="/profile" element={<ProfilePage />} />
-          </Routes>
-        </main>
+      <div className="min-h-screen bg-gray-50 flex">
+        <Routes>
+          <Route path="/" element={<PeoplePage />} />
+          <Route path="/my-info" element={<MyInfoPage />} />
+          <Route path="/team-management" element={<TeamManagementPage />} />
+          <Route path="/project-setup" element={<ProjectSetupPage />} />
+          <Route path="/hiring" element={<HiringPage />} />
+          <Route path="/report" element={<ReportPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
+        </Routes>
       </div>
     </Router>
   );
