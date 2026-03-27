@@ -1,6 +1,6 @@
 # BookVault - Interactive Data Explorer 
 
-### [🚀 Live Demo]([https://react-assignment-nexgensis.netlify.app](https://react-assignment-nexgensis.netlify.app/ |
+### [🚀 Live Demo] : https://react-assignment-nexgensis.netlify.app/
 ## Project Objective
 This project was developed as part of the **Frontend Developer Intern Assignment 2** for **Conversely AI**. The goal was to build a responsive, component-based web application that fetches data from an external API and allows users to search/filter items seamlessly.
 
